@@ -14,5 +14,5 @@ You can run this project on your local machine.
 ```pip install -r requirements.txt```
 
 ### Running the app
-- To run this on your local host type :
+- To run the server type :
 ```python manage.py runsslserver 127.0.0.1:9000```
