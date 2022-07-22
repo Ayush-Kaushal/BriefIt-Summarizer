@@ -1,0 +1,38 @@
+{% extends "BriefIt/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+    <section id="boxes">
+        <div class="">
+            <div id="mid-head">
+                <div class="container">
+                    <h2>Enter Text or Article URL</h2>
+                </div>
+            </div>
+
+            <div class="error-msg">
+                {% if messages %}
+                    <ul class="messages">
+                    {% for message in messages %}
+                        <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>*{{ message }}*</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+
+            <div class="box">
+                <form action="/summary/" method="GET" >
+                    {% csrf_token %}
+                    <textarea placeholder="Enter your text or a link to the article you want to summarize" 
+                                name="input_text" id="input-area" cols="100" rows="15">{{ context.article }}</textarea>
+        
+                    <div class="btn">
+                        <button class="btn-sum" type="submit">Summarize</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+{% endblock %}

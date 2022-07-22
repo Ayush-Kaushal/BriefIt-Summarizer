@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Summarize articles and texts">
+    <meta name="keywords" content="summarize, summarizer, free summary">
+    <meta name="author" content="Ayush Kaushal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ＢｒｉｅｆＩｔ |  Welcome</title>
+    <link rel="stylesheet" href="{% static 'BriefIt/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><a href="{% url 'home' %}" id="symbol">ＢｒｉｅｆＩｔ</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Summarize any text with one click</h1>
+            <p>BriefIt is a tool to summarize texts and articles. You can directly paste your text or provide Article URL for summarization. All this in just one click</p>
+        </div>
+    </section>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <p>BriefIt, Copyright &copy; 2022</p>
+    </footer>
+</body>
+</html>
