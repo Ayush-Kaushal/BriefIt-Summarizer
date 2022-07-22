@@ -8,11 +8,12 @@
 You can run this project on your local machine.
 
 ### Installation
-1. Open terminal in the folder you want to clone the project and type:
+1. Open terminal in the folder you want to clone the project and type:  
 ```git clone https://github.com/Ayush-Kaushal/BriefIt-Summarizer.git```
-2. Install the project dependencies:
+
+2. Install the project dependencies:  
 ```pip install -r requirements.txt```
 
 ### Running the app
-- To run the server type :
+- To run the server type:  
 ```python manage.py runsslserver 127.0.0.1:9000```
