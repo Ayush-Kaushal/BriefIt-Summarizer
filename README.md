@@ -16,4 +16,4 @@ You can run this project on your local machine.
 
 ### Running the app
 - To run the server type:  
-```python manage.py runsslserver 127.0.0.1:9000```
+```python manage.py runserver 127.0.0.1:9000```
