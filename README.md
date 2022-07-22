@@ -13,6 +13,7 @@ You can run this project on your local machine. To start with, pull the repo to 
 ```git clone https://github.com/Ayush-Kaushal/BriefIt-Summarizer.git```
 
 2. Install the project dependencies:
+
 ```pip install -r requirements.txt```
 
 ### Running the app
