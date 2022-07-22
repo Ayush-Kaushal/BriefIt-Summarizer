@@ -9,6 +9,7 @@ You can run this project on your local machine. To start with, pull the repo to 
 
 ### Installation
 1. Open terminal in the folder you want to clone the project and type:
+
 ```git clone https://github.com/Ayush-Kaushal/BriefIt-Summarizer.git```
 2. Install the project dependencies:
 ```pip install -r requirements.txt```
